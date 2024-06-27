@@ -9,9 +9,9 @@ const app = express()
 const port = process.env.port || 3000
 app.use(express.json())
 connection()
-app.use("/",(req, res)=>{
-    res.json("welcome to my facebook apis project")
-})
+// app.use("/",(req, res)=>{
+//     res.json("welcome to my facebook apis project")
+// })
 app.use("/user", userRouter)
 app.use("/post", postRouter)
 app.use("/comment",commentRouter)
